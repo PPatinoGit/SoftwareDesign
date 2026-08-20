@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda con JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">Con-Tienda</a>
+
+    <button class="btn btn-outline-light position-relative" onclick="mostrarUltimaCompra()">
+      🛒 Carrito
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span id="contadorCarrito">0</span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title">TERRENATOR</h5>
+        <img src="https://i.ytimg.com/vi/QGbw7F6B-ms/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCzUCoO6nLRXfFcffou4R-KU6O7Vg" class="card-img-top" alt="Imagen 1">
+        <div class="card-body">
+          <p class="card-text">TERRENEITOR! El coche más poderoso que ah existido, con tracción 4X4 y dos TURBO motores! Este si es todo terreno, las calles son fáciles, Mételo al lodo, parte la nieve, pasa por el agua ! TERRENEITOR! Es el más potente que haya existido! O que prefieres un coche para niñitas ?!</p>
+          <button class="btn btn-primary" onclick="comprar('TERRENATOR')">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title">Taladro Bauker con mandril 10 percutor y reversible</h5>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_692799-MLA95504115320_102025-O.webp" class="card-img-top" alt="Imagen 1">
+        <div class="card-body">
+          <p class="card-text">El taladro mas codiciado de la marca Bauker, hace todos tus arreglos sin descanso, que arreglar tus problemas no genere mas problemas.</p>
+          
+          <button class="btn btn-primary" onclick="comprar('Taladro Bauker')">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <h5 class="card-title">Navaja Suiza Victorinox 73 en 1</h5>
+        <img src="https://victorinoxstore.vtexassets.com/arquivos/ids/159962-1600-auto?v=638385215571930000&width=1600&height=auto&aspect=true" class="card-img-top" alt="Imagen 1">
+        <div class="card-body">
+          <p class="card-text">La navaja más versátil de la marca Victorinox, la unica herramienta que necesitas.</p>
+          <button class="btn btn-primary" onclick="comprar('Navaja Suiza')">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
